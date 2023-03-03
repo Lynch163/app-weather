@@ -1,0 +1,152 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+body{
+  background: $gradient;
+}
+
+#app {
+    margin: $rem auto;
+    max-width: 40rem;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    box-shadow: $box-shadow-dark;
+    background-color: lightyellow;
+    border-radius: 10px;
+  }
+  
+  label {
+    width: 5rem;
+    text-align: center;
+
+  }
+  
+  input {
+    width: 30rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: $rem;
+    background-color: lightyellow;
+  }
+  
+  button {
+    width: 5rem;
+    border: none;
+    border-radius: 6px;
+    padding: $rem;
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: $rem;
+    margin-bottom: $rem;
+    color: white;
+  }
+  
+  section {
+    border: 1px solid lightblue;
+    min-height: 30vh;
+    box-shadow: $box-shadow-dark;
+    border-radius: 12px;
+    padding: $rem/2;
+    h3 {
+      color: $font-color-black;      
+    }
+  }
+  
+  p {
+    margin: $rem;
+    text-align: center;
+    :last-child{
+      margin-bottom: 0;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: $rem;
+    li {
+      margin-bottom: $rem;
+    }
+  }
+  
+  span {
+    cursor: pointer;
+    color:white
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    a {
+      text-decoration: none;
+      background-color: #272727;
+      padding: $rem;
+      border-radius: $rem/2;
+      color:$font-color-white;
+      margin: 0 2rem;
+   
+    }
+  }
+  
+  a:hover {
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    color: $font-color-black;
+  }
+
+
+.main_section{
+  background: none;
+  border: none;
+}
+
+.not_city_p{
+  color:$font-color-white;
+  font-style: bold;
+  font-size: $rem*1.5;
+}
+  
+  .mainly_cloudy {
+    background-color: rgb(190, 187, 187);
+    background-image: url(svg/mainly_cloudy.svg);
+    @include background-repeat-position-size;
+  }
+  .cloudy_sunny {
+    background-color: $background-lightyellow;
+    background-image: url(svg//cloudy_sunny.svg);
+    @include background-repeat-position-size;
+  }
+  .sunny {
+    background-color: $background-yellow;
+    background-image: url(svg//sunny.svg);
+    @include background-repeat-position-size;
+  }
+  .rain {
+    background-color:$background-blue;
+    background-image: url(svg//rain.svg);
+    @include background-repeat-position-size;
+  }
+  .snow {
+    background-color: $background-blue;
+    background-image: url(svg//snow.svg);
+    @include background-repeat-position-size;
+  }
+  .default {
+    background-color: $background-default;
+    background-image: url(svg//default.svg);
+    @include background-repeat-position-size;
+  }
