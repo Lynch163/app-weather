@@ -1,4 +1,4 @@
-# app-weather
+# Приложение погоды
 
 ## Project setup
 ```
